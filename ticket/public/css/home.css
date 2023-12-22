@@ -1,0 +1,693 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+}
+
+.navbar-toggler {
+  border: none;
+  display: none; /* Hide the icon by default */
+}
+
+.navbar-toggler-icon {
+  background-color: #ff6a76; /* Change this to the desired color for the three lines */
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 0;
+  margin-bottom: 10px; /* Adjust the margin to provide spacing between contents */
+  color: #ff6a76;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.nav-link {
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .navbar-toggler {
+    display: block; /* Display the icon at smaller screens */
+  }
+
+  .navbar-nav .dropdown {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .navbar-toggler {
+    display: block; /* Display the icon at smaller screens */
+  }
+
+  .navbar-nav .dropdown {
+    position: static;
+  }
+}
+/*background image*/
+#background-image-div {
+  background-image: url('/images/bg_ticket.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 80vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #background-image-div {
+    height: 80vh; /* Adjust the height for smaller screens */
+    align-items:right; /* Center the image vertically */
+  }
+
+  #left-column {
+    width: 80%; /* Adjust the width of the text column for smaller screens */
+    margin-right: 0; /* Remove right margin to decrease space */
+  }
+}
+/* Media query for smaller screens (e.g., phones) */
+@media (max-width: 576px) {
+  #background-image-div {
+    height: 80vh; /* Adjust the height for smaller screens */
+    align-items:right; /* Center the image vertically */
+  }
+
+  #left-column {
+    width: 80%; /* Adjust the width of the text column for smaller screens */
+  }
+  #content {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+}
+
+  #background-image-div {
+    height: 90vh; /* Adjust the height for smaller screens */
+    text-align: right; /* Align the text (assuming there's text) to the right */
+    background-size: 115%; /* Ensure the entire background image is visible */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 375px) {
+    #background-image-div {
+      height: 80vh; /* Adjust the height for smaller screens */
+      text-align: center; /* Center the text for smaller screens */
+     
+    }
+  
+
+  #left-column {
+    width: 60%; /* Adjust the width of the text column for smaller screens */
+   
+  }
+}
+
+/*home carousel */
+  .custom-caption {
+    text-align: left; /* Align text to the left */
+    padding-top: 21%;
+    display: flex;
+    left: 5%;
+    margin-right: 10px;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the content takes the full height of the caption */
+    color: #0E2431;
+    bottom: 0;
+  }
+
+/* apply section */
+.process-item {
+  padding: 50px;
+  /* margin-right:50px;
+  border-radius: 10px; */
+  text-align: center;
+  background-color: white;
+  border-color: #ff6a76;
+
+  /* Add box shadow for the shadow effect */
+  box-shadow: 0px 0px 10px rgba(209, 64, 64, 0.64);
+}
+
+.process-item i {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -20px; /* Adjust the margin to position the icon */
+}
+
+
+.process-item h4 {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #ff6a76;
+}
+
+.process-item p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ff6a76;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 10px; /* Adjust the height as needed */
+}
+.process-item {
+  transition: transform 0.3s, color 0.3s; /* Add transition for transform and color */
+  color: #f8f9fb86; /* Set the default color to white */
+}
+
+.process-item:hover {
+  transform: scale(1.05); /* Scale the container on hover */
+  color: rgb(253, 253, 253); /* Change the color to green on hover */
+}
+
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background:#ff6a76;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #ff6a76;
+  background-color: #fff;
+  color: #ff6a76;
+}
+/* Contact Me CSS */
+.contact{
+  background: #fdfdfd;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Default styles for larger screens */
+.col-lg-12,
+.col-md-12,
+.col-12 {
+  text-align: center;
+  margin: 0 auto; /* Center the div */
+}
+
+/* Media query for medium-sized screens (tablets) */
+@media (max-width: 768px) {
+  .col-lg-12,
+  .col-md-12,
+  .col-12 {
+    text-align: center;
+    margin: 0 auto; /* Center the div */
+  }
+}
+
+/* Media query for smaller screens (phones) */
+@media (max-width: 576px) {
+  .col-lg-12,
+  .col-md-12,
+  .col-12 {
+    text-align: center;
+    margin: 0 auto; /* Center the div */
+  }
+}
+
+/* Footer CSS */
+footer {
+  background: #ff6a76;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+  footer .text span {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #fafbfb;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #ff6a76;
+  }
+}
+/*footer div*/
+/* Default styles for larger screens */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Default styles for form-group */
+.form-group {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 10px; /* Add some padding for better spacing */
+}
+
+/* Media query for medium-sized screens (tablets) */
+/* Media query for smaller screens (phones) */
+@media (max-width: 576px) {
+  .form-group {
+    width: 90%;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 480px) {
+  .form-group {
+    width: 95%;
+    font-size: 10px; /* Adjust font size for even smaller screens */
+  }
+}
+
+/* Another media query for an even smaller screen size */
+@media (max-width: 375px) {
+  .form-group {
+    width: 80%;
+    font-size: 8px; /* Adjust font size for even smaller screens */
+    margin: 10px auto;
+  }
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  background: lightskyblue;
+  border: transparent;
+  border-radius: 50%;
+  width: 30px;
+  padding-bottom: 4px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  overflow-y: auto;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Common styling for form elements */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 450px;
+  background: #fff;
+  padding: 20px;
+  margin-top: 10%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: 1px solid rgba(17, 12, 46, 0.15);
+  border-radius: 10px;
+}
+
+.login-form .form-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #111;
+}
+
+.login-form .form-input {
+  margin: 10px 0;
+}
+
+.login-form .form-input label,
+.login-form .captcha label {
+  display: block;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.login-form .form-input input,
+.login-form .captcha .captcha-form input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #888;
+  font-size: 15px;
+}
+
+.login-form .captcha {
+  margin: 15px 0;
+}
+
+.login-form .captcha .preview {
+  color: #555;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  border: 1px dashed #888;
+  border-radius: 4px;
+  font-family: "monospace";
+}
+
+.login-form .captcha .preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+.login-form .captcha .captcha-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .captcha .captcha-form input {
+  width: 70%;
+}
+
+.login-form .captcha .captcha-form .captcha-refresh {
+  width: 25%;
+  cursor: pointer;
+}
+
+#login-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #4c81ff;
+  border-radius: 5px;
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  opacity: .8;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;
+    margin-left: 80px;
+  }
+}
+
+
+.login-form .form-input input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #888;
+  font-size: 15px;
+}
+
+#signup-btn {
+  margin-top: 5px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #4c81ff;
+  border-radius: 5px;
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#signup-btn:hover {
+  opacity: .8;
+}.password-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-toggle-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: -30px; /* Adjust the margin to align it with the input field */
+}
+
+/* Style the icon */
+.password-toggle-button i {
+  font-size: 18px; /* Adjust the font-size as needed */
+  color: #727171; /* Adjust the color as needed */
+}
+
+/* Ensure that the input field and button don't overlap */
+.password-input input {
+  padding-right: 30px; /* Adjust the padding to leave space for the button */
+}
+
+/* styles.css */
+.background-container::before {
+  content: "";
+  background-image: url('/images/bg.png'); /* Set the path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3; /* Adjust the opacity value here */
+  z-index: -1; /* Ensure the background is behind other content */
+}
+
+.background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed for your layout */
+  position: relative;
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+/* CSS for the modal content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width:500px;
+}
